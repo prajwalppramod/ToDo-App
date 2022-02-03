@@ -1,0 +1,8 @@
+<h1 class="heading">EDIT TASK</h1>
+<form class="input-form" action="/edit/{{task._id}}/save" method="post">
+    <label for="edit-name">Edit Task Name</label>
+    <input id="edit-name" type="text" value="{{task.taskName}}" name="EditTaskName" required>
+    <label for="edit-desc">Edit Task Description</label>
+    <input id="edit-desc" type="text" value="{{task.taskDesc}}" name="EditTaskDescription" required>
+    <button type="submit">Edit</button>
+</form>

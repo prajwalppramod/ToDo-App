@@ -1,0 +1,124 @@
+body {
+    margin: 0;
+    font-family: "Times New Roman", Times, serif;
+    background-image: url("https://undsgn.com/wp-content/uploads/2018/04/ltotbngnzzu.jpg");
+    background-size:1000px;
+    color: white;
+}
+
+.heading{
+    margin: 20px 50% 0 50%;
+    width: max-content;
+    transform: translateX(-50%);
+}
+
+.input-form{
+    background-color: rgb(36,52,71);
+    width:max-content;
+    height:max-content;
+    margin: 20px auto;
+    padding: 10px;
+    border-radius: 3px;
+    box-shadow: rgb(254, 254, 255) -25px 7px 50px -10px;
+}
+
+.input-form input{
+    background-color: skyblue;
+    border:none;
+    padding:5px;
+    border-radius: 2px;
+}
+
+.input-form button{
+    background-color: rgb(89, 89, 177);
+    border:1px solid black;
+    padding:5px;
+    border-radius: 2px;
+    transition:0.5s;
+}
+
+.input-form button:hover {
+    background-color: rgb(129,129,217);
+
+}
+.tasks-container {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    margin:1rem;
+}
+
+.task-form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 50rem;
+    background-color: rgb(36,52,71);
+    margin: 0.5rem 0;
+    padding: 0 1rem;
+    border-radius: 5px;
+    box-shadow: rgb(254, 254, 255) -25px 7px 50px -27px;
+}
+
+.name-container {
+    float: left;
+}
+.name-container .taskName {
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.btn-container {
+    margin: auto 0;
+
+}
+
+.btn-container * {
+    padding: 1rem;
+    background-color: rgb(89, 89, 177);
+    border-radius: 4px;
+    border:1px solid black;
+    transition:0.5s;
+
+}
+
+.btn-container *:hover {
+    background-color: rgb(129,129,217);
+
+}
+
+/* EDIT FUNCTION */
+
+.edit-input-form {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    width: 50%;
+    margin: 1rem auto;
+    padding: 1rem 1rem;
+    background-color: rgb(36,52,71);
+    border-radius: 5px;
+    box-shadow: rgb(254, 254, 255) -25px 7px 50px -10px;
+
+
+}
+
+.edit-input-form *{
+    margin: 0.4rem 0.2rem;
+}
+
+
+.edit-input-form button{
+    margin-top: 1rem;
+    width: 10%;
+    background-color: rgb(89, 89, 177);
+    border-radius: 2px;
+    border:1px solid black;
+    transition:0.5s;
+
+}
+
+.edit-input-form button:hover{
+    background-color: rgb(129,129,217);
+}

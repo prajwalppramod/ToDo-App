@@ -1,0 +1,22 @@
+<h1 class="heading">TO DO APP</h1>
+<form class="input-form" action="/" method="post">
+    <input type="text" placeholder="Task Name" name="TaskName" autocomplete="off" required>
+    <input type="text" placeholder="Task Description" name="TaskDescription" autocomplete="off" required>
+    <button type="submit">Add</button>
+</form>
+<div class="tasks-container">
+{{#if tasks}}
+    {{#each tasks}}
+        <form class="task-form" method="post">
+            <div class="name-container">
+                <p class="taskName">{{this.taskName}}</p>
+                <p class="taskDesc">{{this.taskDesc}}</p>
+            </div>
+            <div class="btn-container">
+                <button id="delBtn" formaction="/delete/{{this._id}}">Delete</button>
+                <button id="editBtn" formaction="/edit/{{this._id}}">Edit</button>
+            </div>
+        </form>
+    {{/each}}
+{{/if}}
+</div>
