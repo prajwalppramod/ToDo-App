@@ -39,6 +39,7 @@ body {
 
 .input-form button:hover {
     background-color: rgb(129,129,217);
+    transform: scale(106%);
 
 }
 .tasks-container {
@@ -63,10 +64,14 @@ body {
 
 .name-container {
     float: left;
+    font-family: 'Play', sans-serif;
 }
 .name-container .taskName {
     font-weight: bolder;
     font-size: 20px;
+}
+.name-container .taskDesc{
+    font-family: 'Merienda', cursive;
 }
 
 .btn-container {
@@ -85,6 +90,7 @@ body {
 
 .btn-container *:hover {
     background-color: rgb(129,129,217);
+    transform: scale(104%);
 
 }
 
